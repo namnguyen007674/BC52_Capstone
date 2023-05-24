@@ -46,8 +46,11 @@
     font-weight: 600;
     font-size: 26px;
     vertical-align: middle;
+    transition: all .5s;
 }
-
+.header_nav .navbar-brand span:hover{
+    color:#ff6e65;
+}
 .navbar_bottom .nav-item{
     padding: 5px;
 }
@@ -121,10 +124,10 @@
     background-color: white;
     border: 1px solid black;
 }
-#switchButton .fa-sun {
+#switchButton .fa-sun-o {
     display: none;
 }
-#switchButton .fa-moon {
+#switchButton .fa-moon-o {
     display: block;
 }
 
@@ -137,12 +140,12 @@
     background-color: black;
     border: 1px solid white;
 }
-.dark #switchButton .fa-sun {
+.dark #switchButton .fa-sun-o {
     display: block;
     color: white;
 }
   
-.dark #switchButton .fa-moon {
+.dark #switchButton .fa-moon-o {
     display: none;
 }
 .dark .theme_switch {
@@ -160,7 +163,6 @@
     height: 100%;
 }
 .carousel-item img{
-    height: 100%;
     width: 100%;
     object-fit: cover;
 }
@@ -178,8 +180,48 @@
 }
 
 .carousel-caption h5{
-    font-size: 70px;
+    font-size: 65px;
     line-height: 80px;
     font-weight: bold;
     color: #fff;
 }
+
+.carousel-caption .btn_banner{
+    margin-top: 30px;
+    padding: 14px 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    background-color: white;
+    transition: all .5s;
+}
+
+.carousel-caption .btn_banner:hover{
+    background-color: #ff6e65;
+    color: white;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: all .5s;
+    border: 5px solid transparent;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color: #ff6e65;
+}
+.carousel-indicators .active{
+    background-color: #ff6e65;
+}
+
+.carousel-indicators {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 25px;
+    bottom: 30px;
+}
+
+ 
