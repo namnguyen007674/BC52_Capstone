@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.section{
+    padding:80px 0;
+}
+
 /* HEADER  */
 .header_top {
     background-color: #0D369F;
@@ -224,4 +228,44 @@
     bottom: 30px;
 }
 
- 
+/* BOXHOME  */
+.boxhome{
+    position: relative;
+    top: -9rem;
+}
+.boxhome .boxhome_item{
+    text-align: center;
+    padding: 50px 35px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+.boxhome .boxhome_item.color1{
+    background-color: #037ef3;
+}
+.boxhome .boxhome_item.color2{
+    background-color: #ffc949;
+}
+.boxhome .boxhome_item.color3{
+    background-color: #ff4f81;
+}
+.boxhome .boxhome_item.color4{
+    background-color: #1ee697;
+}
+.boxhome .boxhome_item i{
+    font-size: 45px;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.boxhome .boxhome_item h4 a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.boxhome .boxhome_item h4 a:hover{
+    color: black;
+}
