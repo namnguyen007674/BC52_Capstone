@@ -5,6 +5,32 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.heading h2{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.heading h2::before,.heading h2::after{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    left: 0px;
+    margin: 0 auto;
+}
+.heading h2::before{
+    bottom: -8px;
+    left: -18px;
+}
+.heading h2::after{
+    bottom: -15px;
+    left: 18px;
+}
+.heading h2 span{
+    color: #ff6e65;
+}
 
 /* HEADER  */
 .header_top {
@@ -265,4 +291,29 @@
 
 .boxhome .boxhome_item h4 a:hover{
     color: black;
+}
+
+/* WELCOME  */
+
+
+.welcome .welcome_content .welcome_item i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    background-color: rgb(13 54 159 / 9%);
+    color: #0d369f;
+    border-radius: 50%;
+}
+.welcome .welcome_content .welcome_item h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+.welcome .welcome_content .welcome_item h4:hover{
+    color: #ff6e65;
+}
+.welcome .welcome_content .welcome_item p{
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
 }
