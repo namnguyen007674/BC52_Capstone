@@ -32,6 +32,10 @@
     color: #ff6e65;
 }
 
+.section{
+    padding: 70px 0;
+}
+
 /* HEADER  */
 .header_top {
     background-color: #0D369F;
@@ -388,16 +392,20 @@
 }
 .number__item{
     width: 25%;
+    border-right: 1px solid #eee;
 }
 
 
 .number__item p:first-of-type{
-    font-size: 60px;
-    font-weight: 300;
+    font-size: 46px;
+    font-weight: 600;
+    margin: 0;
 }
 .number__item p:last-of-type{
-    font-size: 20px;
-    color: #888888;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    margin:0 ;
 }
 
 .number_title{
@@ -440,7 +448,7 @@
   .feedback-cont .testimonials_grid {
     background: #FEFEFE;
     border-radius: 4px;
-    box-shadow: 0 20px 62px;
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
     padding: 2rem;
   }
 
