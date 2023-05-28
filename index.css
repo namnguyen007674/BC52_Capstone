@@ -34,10 +34,11 @@
 }
 
 .section{
-    padding: 70px 0;
+    padding: 80px 0;
 }
 
 /* HEADER  */
+
 .header_top {
     background-color: #0D369F;
 }
@@ -73,6 +74,15 @@
     color: #FF928B;
 }
 
+.header_nav{
+    position: sticky;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+}
 .header_nav .navbar-brand span{
     color: #0d369f;
     font-weight: 600;
@@ -534,6 +544,7 @@
 }
 
 /* HELP  */
+
 .help .help_content .help_item p:first-child{
     font-size: 35px;
     font-weight: 600;
@@ -560,13 +571,59 @@
 
 /* FOOTER  */
 footer{
-    background-color: #060e1f;
-    padding:80px ;
-    position: relative;
+    margin-top: 100px;
 }
-
-.footer_bottom{
+.footer_content{
     padding: 80px 0;
+    background: #060e1f;
+}
+.footer_top{
+    padding: 50px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top:-60px;
+    right: 0;
+    left: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
+}
+.footer_top .footer_left p:first-child{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.footer_top .footer_left p:last-child{
+    font-size: 14px;
+    color: #707070;
+    letter-spacing: 1px;
+}
+.footer_top .footer_right{
+    width: 70%;
+}
+.footer_top .footer_right input{
+    width: 65%;
+    padding-left: 16px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:10px;
+    border: 1px solid #eee;
+}
+.footer_top .footer_right input:focus{
+    color: #495057;
+    outline: 0;
+    border-color: #91e6c4;
+}
+.footer_top .footer_right button{
+    padding: 16px 30px;
+    border: none;
+    background-color: #0d369f;
+    color: white;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px;
+}
+.footer_bottom{
+    margin-top: 120px;
 }
 .footer_bottom .footer_item h4{
     border-bottom: 1px solid rgb(23 54 88 / 40%);
@@ -625,3 +682,46 @@ footer{
 .footer_bottom .footer_social a:hover{
     opacity: 0.8;
 }
+
+.footer_copywrite{
+    background: #040a17;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer_copywrite p{
+    margin: 0;
+    color: #a0a0a0;
+    font-size: 15px;
+}
+.footer_copywrite p a{
+    text-decoration: none;
+    color: white;
+}
+.footer_copywrite p a:hover{
+    text-decoration: underline;
+}
+
+/* BACK TO TOP  */
+.backtoTop {
+    position: fixed;
+    z-index: 999;
+    right: 15px;
+    bottom: 85px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0d369f;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
