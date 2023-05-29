@@ -74,15 +74,6 @@
     color: #FF928B;
 }
 
-.header_nav{
-    position: sticky;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    width: 100%;
-    background-color: white;
-}
 .header_nav .navbar-brand span{
     color: #0d369f;
     font-weight: 600;
@@ -93,12 +84,11 @@
 .header_nav .navbar-brand span:hover{
     color:#ff6e65;
 }
-.navbar_bottom .nav-item{
-    padding: 5px;
-}
 
+
+/* NAV  */
 .navbar_bottom .nav-link{
-    font-weight: 600;
+    font-weight: bold;
     transition: all .5s;
 }
 .navbar_bottom .nav-item .nav-link:hover{
@@ -143,7 +133,7 @@
 .navbar-collapse form .btn_search {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 12px;
     padding-right: 20px;
     border: none;
     background-color: transparent;
@@ -162,15 +152,19 @@
 #myBody {
     background-color: white;
 }
-#switchButton {
+/* #switchButton {
     background-color: white;
-    border: 1px solid black;
-}
+} */
 #switchButton .fa-sun-o {
     display: none;
 }
 #switchButton .fa-moon-o {
     display: block;
+    font-size: 23px;
+    color: #0d369f;
+}
+#switchButton .fa-moon-o:hover{
+    color: #ff4f81;
 }
 
 
@@ -178,15 +172,17 @@
 .dark#myBody {
     background-color: black;
   }
-.dark #switchButton {
+/* .dark #switchButton {
     background-color: black;
-    border: 1px solid white;
-}
+} */
 .dark #switchButton .fa-sun-o {
     display: block;
-    color: white;
+    color: #0d369f;
+    font-size: 23px;
 }
-  
+.dark #switchButton .fa-sun-o:hover{
+    color: #ff4f81;
+}
 .dark #switchButton .fa-moon-o {
     display: none;
 }
@@ -195,6 +191,7 @@
     color: white;
     border: 1px solid white;
 }
+
 
 
 .carousel-inner{
@@ -207,6 +204,7 @@
 .carousel-item img{
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 .carousel-caption {
     position: absolute;
@@ -293,7 +291,7 @@
 .boxhome .boxhome_item i{
     font-size: 45px;
     color: white;
-    padding-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .boxhome .boxhome_item h4 a{
@@ -308,6 +306,11 @@
     color: black;
 }
 
+@media screen and (max-width:1199.98px) {
+    .boxhome .boxhome_item h4 a{
+        font-size: 20px;
+    }
+}
 /* WELCOME  */
 
 
