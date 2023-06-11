@@ -378,25 +378,30 @@ body.dark .navbar-collapse form .form-control::placeholder {
     color: white;
 } */
 .mission_content .mission_right .mission_img a {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    font-size: 35px;
-    padding-left: 10px;
-    text-align: center;
-    line-height: 70px;
-    border-radius: 50%;
-    transition: 0.3s ease-in-out;
-    /* -webkit-animation: ripple 1s linear infinite;
-    animation: ripple 1s linear infinite; */
-    color: transparent;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: #fff;
-    border: 4px solid #fff;
-    background: rgb(12 12 12 / 22%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.mission_content .mission_right .mission_img i{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-size: 35px;
+  padding-left: 10px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  /* -webkit-animation: ripple 1s linear infinite;
+  animation: ripple 1s linear infinite; */
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #fff;
+  border: 4px solid #fff;
+  background: rgb(12 12 12 / 22%);
+}
+.mission_content .mission_right .mission_img i:hover{
+  transform: scale(1.1);
 }
 
 
@@ -419,43 +424,8 @@ div#small-dialog iframe {
   top: -40px;
 }
 
-/**
-   * Fade-zoom animation for first dialog
-   */
-/* start state */
-.my-mfp-zoom-in .zoom-anim-dialog {
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  transform: scale(0.8);
-}
 
-/* animate in */
-.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
-  opacity: 1;
-  transform: scale(1);
-}
 
-/* animate out */
-.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
-  transform: scale(0.8);
-  opacity: 0;
-}
-
-/* Dark overlay, start state */
-.my-mfp-zoom-in.mfp-bg {
-  opacity: 0;
-  transition: opacity 0.3s ease-out;
-}
-
-/* animate in */
-.my-mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: 0.95;
-}
-
-/* animate out */
-.my-mfp-zoom-in.mfp-removing.mfp-bg {
-  opacity: 0;
-}
 
 body.dark .mission_content .mission_left h3{
   color: white;

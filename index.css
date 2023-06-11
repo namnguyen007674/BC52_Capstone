@@ -196,11 +196,12 @@ body.dark .header_top{
   box-shadow: none;
 }
 
-body.dark .navbar .nav-link,
-.header_nav .navbar-brand span {
+body.dark .navbar .nav-link{
   color: #fff;
 }
-
+body.dark .header_nav .navbar-brand span {
+  color: white;
+}
 body.dark .navbar-collapse form .form-control{
   color: white;
 }
