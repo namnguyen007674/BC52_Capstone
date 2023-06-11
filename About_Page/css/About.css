@@ -133,7 +133,7 @@ body.dark .heading h2 {
 body.dark .header_top {
   background-color: #4867b0;
 }
-body.dark .header_nav .navbar-brand span {
+body.dark .navbar-brand span {
   color: white;
 }
 /* NAV  */
